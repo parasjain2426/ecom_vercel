@@ -11,6 +11,10 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.7.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack": "^5.96.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
