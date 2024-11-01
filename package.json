@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -11,8 +11,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.7.3",
-    "path": "^0.12.7",
-    "webpack": "^5.96.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
