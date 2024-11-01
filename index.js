@@ -1,5 +1,3 @@
-const path = require("path");
-const { fileURLToPath } = require("url");
 const express = require("express");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/Auth");
@@ -30,7 +28,9 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/Auth", authRoutes);
 
-app.use(express.static(path.join(__dirname, "build")));
+app.get("/", async (req, res) => {
+  res.status(200).json({ status: "success!" });
+});
 
 // Endpoint to create a new product
 app.post("/api/products", async (req, res) => {
